@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  background-color: #80d0c7;
+  color: white;
+  margin: 0;
+}
+label {
+  display: block;
+  padding: 1rem;
+  font-size: larger;
+}
+#initial-price,
+#stocks-quantity,
+#current-price {
+  border-radius: 0.3rem;
+  width: 30%;
+  padding: 0.5rem 0.5rem;
+}
+#submit-btn {
+  background-color: white;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  color: black;
+  padding: 0.5rem 0.5rem;
+}
+.footer {
+  background-color: #001821;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  font-size: larger;
+}
+.footer .link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.footer .footer-header {
+  font-weight: bold;
+  font-size: larger;
+}
+.footer ul {
+  padding-inline-start: 0px;
+}
+.footer ul li {
+  display: inline;
+}
+
+input [type="number"] {
+  border-radius: 5rem;
+}
