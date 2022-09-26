@@ -7,7 +7,11 @@ function submitHandler() {
   var ip = Number(initialPrice.value);
   var qty = Number(stocksQuantity.value);
   var cur = Number(currentPrice.value);
-  calculateProfitAndLoss(ip, qty, cur);
+  if (ip > 0 && qty > 0 && cur > 0) {
+    calculateProfitAndLoss(ip, qty, cur);
+  } else {
+    showOutput("Values cannot be 0 and -ve value, Enter a valid number!!");
+  }
 }
 function calculateProfitAndLoss(initial, quantity, current) {
   if (initial > current) {
